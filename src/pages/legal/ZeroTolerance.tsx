@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { FileText } from "lucide-react";
 import { Document, Page, pdfjs } from "react-pdf";
-import termsPdf from "@/assets/files/zeroTolerance.pdf";
+import termsPdf from "@/assets/files/zeroTolerancePolicy.pdf";
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
 
