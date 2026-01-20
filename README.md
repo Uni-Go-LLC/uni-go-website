@@ -44,7 +44,7 @@ To start the development server:
 npm run dev
 ```
 
-The application will be available at `http://localhost:8000`
+The application will be available at `http://localhost:8080`
 
 ### Building for Production
 
