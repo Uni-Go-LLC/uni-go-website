@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Mail, Instagram, Linkedin } from "lucide-react";
+import { Mail, Instagram } from "lucide-react";
 import logoImage from "@/assets/images/uni-go-logo.png";
 import { navLinks, legalLinks } from "@/lib/navigation";
 
@@ -69,15 +69,6 @@ export const Footer = () => {
               className="mt-2 flex items-center gap-2 text-muted-foreground text-sm hover:text-muted-foreground"
             >
               <Instagram className="w-4 h-4" />
-              @rideunigo
-            </a>
-            <a
-              href="https://www.linkedin.com/company/rideunigo"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2 flex items-center gap-2 text-muted-foreground text-sm hover:text-muted-foreground"
-            >
-              <Linkedin className="w-4 h-4" />
               @rideunigo
             </a>
           </div>

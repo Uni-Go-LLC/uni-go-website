@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
-import { Mail, Instagram, Linkedin } from "lucide-react";
+import { Mail, Instagram } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -105,21 +105,6 @@ const Contact = () => {
                 <h2 className="text-2xl font-bold text-foreground mb-2">Instagram</h2>
                 <Button asChild size="lg" className="shadow-gold w-full sm:w-auto">
                   <a href="https://instagram.com/rideunigo" target="_blank" rel="noopener noreferrer">
-                    @rideunigo
-                  </a>
-                </Button>
-              </div>
-            </div>
-
-            {/* LinkedIn */}
-            <div className="bg-card rounded-3xl p-8 md:p-12 border border-border shadow-uni-md mt-6">
-              <div className="text-center">
-                <div className="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
-                  <Linkedin className="w-10 h-10 text-primary" />
-                </div>
-                <h2 className="text-2xl font-bold text-foreground mb-2">LinkedIn</h2>
-                <Button asChild size="lg" className="shadow-gold w-full sm:w-auto">
-                  <a href="https://www.linkedin.com/company/rideunigo" target="_blank" rel="noopener noreferrer">
                     @rideunigo
                   </a>
                 </Button>
