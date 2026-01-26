@@ -56,11 +56,11 @@ export const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground mb-4">Contact</h4>
             <a
-              href="mailto:uni.go.llc@gmail.com"
+              href="mailto:hello@rideunigo.com"
               className="flex items-center gap-2 text-muted-foreground text-sm hover:text-muted-foreground"
             >
               <Mail className="w-4 h-4" />
-              uni.go.llc@gmail.com
+              hello@rideunigo.com
             </a>
             <a
               href="https://instagram.com/rideunigo"

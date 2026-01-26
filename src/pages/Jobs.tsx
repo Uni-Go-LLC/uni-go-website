@@ -68,8 +68,8 @@ const Jobs = () => {
 
                         <p className="text-muted-foreground text-sm md:text-base">
                             Don't see a role that fits? Send us your resume at{" "}
-                            <a href="mailto:uni.go.llc@gmail.com" className="text-gradient-gold hover:underline font-semibold">
-                                uni.go.llc@gmail.com
+                            <a href="mailto:hello@rideunigo.com" className="text-gradient-gold hover:underline font-semibold">
+                                hello@rideunigo.com
                             </a>
                             {" "}- we're always looking for exceptional talent!
                         </p>

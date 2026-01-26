@@ -89,8 +89,8 @@ const Contact = () => {
                 <h2 className="text-2xl font-bold text-foreground mb-2">Email Us</h2>
 
                 <Button asChild size="lg" className="shadow-gold w-full sm:w-auto">
-                  <a href="mailto:uni.go.llc@gmail.com">
-                    uni.go.llc@gmail.com
+                  <a href="mailto:hello@rideunigo.com">
+                    hello@rideunigo.com
                   </a>
                 </Button>
               </div>
