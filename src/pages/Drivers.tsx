@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { Users, MapPin, DollarSign, Shield, Clock, Bell } from "lucide-react";
 import { BetaSignupButton } from "@/components/BetaSignupButton";
-import createRideOfferImage from "@/assets/images/create-ride-offer-2.png";
+import createRideOfferImage from "@/assets/images/create-ride-offer.png";
 import offerRideDetailsImage from "@/assets/images/offer-ride-details.png";
 
 const features = [

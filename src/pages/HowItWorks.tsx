@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import createRideRequestImage from "@/assets/images/create-ride-request.png";
-import requestRideDetailsImage from "@/assets/images/request-ride-details-2.png"
-import createRideOfferImage from "@/assets/images/create-ride-offer-2.png";
+import requestRideDetailsImage from "@/assets/images/request-ride-details.png"
+import createRideOfferImage from "@/assets/images/create-ride-offer.png";
 import offerRideDetailsImage from "@/assets/images/offer-ride-details.png";
 import { Layout } from "@/components/layout/Layout";
 import { MapPin, DollarSign, Shield, Clock, Bell, Users, Car } from "lucide-react";
