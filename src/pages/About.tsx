@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { Shield, Users, Heart, Target, Zap } from "lucide-react";
 import rideFeedImage from "@/assets/images/ride-feed-requested.png";
+import mapImage from "@/assets/images/map.png";
 
 const values = [
   {
@@ -58,10 +59,14 @@ const About = () => {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
-              className="flex justify-center lg:justify-end"
+              className="relative flex justify-end"
             >
-              <div className="relative mr-4 md:mr-8">
-                <img src={rideFeedImage} alt="Ride Feed Screen" className="w-48 md:w-56 rounded-3xl" />
+              <div className="relative mr-4 md:mr-8 -mt-6">
+                <img src={mapImage} alt="Map Screen" className="w-56 md:w-64 rounded-3xl -translate-y-5" />
+
+                <div className="absolute -left-24 md:-left-44 top-16">
+                  <img src={rideFeedImage} alt="Ride Feed Screen" className="w-48 md:w-56 rounded-3xl" />
+                </div>
               </div>
             </motion.div>
           </div>
