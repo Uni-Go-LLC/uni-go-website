@@ -4,6 +4,7 @@ import createRideRequestImage from "@/assets/images/create-ride-request.png";
 import requestRideDetailsImage from "@/assets/images/request-ride-detail.png"
 import createRideOfferImage from "@/assets/images/create-ride-offer.png";
 import offerRideDetailsImage from "@/assets/images/offer-ride-detail.png";
+import chatImage from "@/assets/images/chat.png";
 import { Layout } from "@/components/layout/Layout";
 import { MapPin, DollarSign, Shield, Clock, Bell, Users, Car } from "lucide-react";
 import { BetaSignupButton } from "@/components/BetaSignupButton";
@@ -295,6 +296,41 @@ const HowItWorks = () => {
                         </div>
                     </section>
 
+                    {/* Chat Section */}
+                    <section className="py-16 md:py-24 bg-card">
+                        <div className="container mx-auto px-4">
+                            <div className="grid lg:grid-cols-2 gap-12 items-center">
+                                <motion.div
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    className="text-center lg:text-left max-w-3xl mx-auto lg:mx-0"
+                                >
+                                    <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                                        Chat with Your Ride Crew
+                                    </h3>
+                                    <p className="text-lg text-muted-foreground">
+                                        Message drivers and fellow riders in-app to coordinate pickup, share updates, or just
+                                        make the ride more fun.
+                                    </p>
+                                </motion.div>
+
+                                <motion.div
+                                    initial={{ opacity: 0, x: 20 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    viewport={{ once: true }}
+                                    className="flex justify-center lg:justify-end"
+                                >
+                                    <img
+                                        src={chatImage}
+                                        alt="Chat with riders and drivers"
+                                        className="w-64 md:w-72 rounded-3xl"
+                                    />
+                                </motion.div>
+                            </div>
+                        </div>
+                    </section>
+
                     {/* CTA Section */}
                     <section className="py-16 md:py-24 bg-foreground">
                         <div className="container mx-auto px-4">
@@ -430,6 +466,41 @@ const HowItWorks = () => {
                                         <p className="text-muted-foreground text-sm">{item.description}</p>
                                     </motion.div>
                                 ))}
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Chat Section */}
+                    <section className="py-16 md:py-24 bg-card">
+                        <div className="container mx-auto px-4">
+                            <div className="grid lg:grid-cols-2 gap-12 items-center">
+                                <motion.div
+                                    initial={{ opacity: 0, y: 20 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    className="text-center lg:text-left max-w-3xl mx-auto lg:mx-0"
+                                >
+                                    <h3 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+                                        Chat with Your Passengers
+                                    </h3>
+                                    <p className="text-lg text-muted-foreground">
+                                        Use in-app chat to coordinate pickup details, share ETA updates, and keep everyone
+                                        on the same page before and during the ride.
+                                    </p>
+                                </motion.div>
+
+                                <motion.div
+                                    initial={{ opacity: 0, x: 20 }}
+                                    whileInView={{ opacity: 1, x: 0 }}
+                                    viewport={{ once: true }}
+                                    className="flex justify-center lg:justify-end"
+                                >
+                                    <img
+                                        src={chatImage}
+                                        alt="Chat with riders and drivers"
+                                        className="w-64 md:w-72 rounded-3xl"
+                                    />
+                                </motion.div>
                             </div>
                         </div>
                     </section>
