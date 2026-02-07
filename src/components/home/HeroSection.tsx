@@ -7,7 +7,7 @@ import getStartedImage from "@/assets/images/get-started.png";
 
 export const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden py-12 md:py-20 lg:py-28">
+    <section className="relative overflow-hidden py-8 md:py-10">
       {/* Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />

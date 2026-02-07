@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 
 export const BetaCTASection = () => {
   return (
-    <section className="py-16 md:py-24 bg-foreground relative overflow-hidden">
+    <section className="py-8 md:py-10 bg-foreground relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(circle_at_30%_20%,_hsl(var(--primary))_0%,_transparent_50%)]" />

@@ -128,7 +128,7 @@ const HowItWorks = () => {
     return (
         <Layout>
             {/* Hero Section */}
-            <section className="py-16 md:py-24 relative overflow-hidden">
+            <section className="py-8 md:py-10 relative overflow-hidden">
                 <div className="absolute inset-0 overflow-hidden pointer-events-none">
                     <div className="absolute top-20 left-10 w-72 h-72 bg-primary/10 rounded-full blur-3xl" />
                     <div className="absolute bottom-20 right-10 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
@@ -183,7 +183,7 @@ const HowItWorks = () => {
             {activeTab === "riders" && (
                 <>
                     {/* Hero Section */}
-                    <section className="py-16 md:py-24 relative overflow-hidden">
+                    <section className="py-8 md:py-10 relative overflow-hidden">
                         <div className="container mx-auto px-4 relative z-10">
                             <div className="grid lg:grid-cols-2 gap-12 items-center">
                                 <motion.div
@@ -221,7 +221,7 @@ const HowItWorks = () => {
                     </section>
 
                     {/* Features Section */}
-                    <section className="py-16 md:py-24 bg-card">
+                    <section className="py-8 md:py-10 bg-card">
                         <div className="container mx-auto px-4">
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
@@ -259,7 +259,7 @@ const HowItWorks = () => {
                     </section>
 
                     {/* How It Works Section */}
-                    <section className="py-16 md:py-24">
+                    <section className="py-8 md:py-10">
                         <div className="container mx-auto px-4">
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
@@ -297,7 +297,7 @@ const HowItWorks = () => {
                     </section>
 
                     {/* Chat Section */}
-                    <section className="py-16 md:py-24 bg-card">
+                    <section className="py-8 md:py-10 bg-card">
                         <div className="container mx-auto px-4">
                             <div className="grid lg:grid-cols-2 gap-12 items-center">
                                 <motion.div
@@ -332,7 +332,7 @@ const HowItWorks = () => {
                     </section>
 
                     {/* CTA Section */}
-                    <section className="py-16 md:py-24 bg-foreground">
+                    <section className="py-8 md:py-10 bg-foreground">
                         <div className="container mx-auto px-4">
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
@@ -357,7 +357,7 @@ const HowItWorks = () => {
             {activeTab === "drivers" && (
                 <>
                     {/* Hero Section */}
-                    <section className="py-16 md:py-24 relative overflow-hidden">
+                    <section className="py-8 md:py-10 relative overflow-hidden">
                         <div className="container mx-auto px-4 relative z-10">
                             <div className="grid lg:grid-cols-2 gap-12 items-center">
                                 <motion.div
@@ -395,7 +395,7 @@ const HowItWorks = () => {
                     </section>
 
                     {/* Features Section */}
-                    <section className="py-16 md:py-24 bg-card">
+                    <section className="py-8 md:py-10 bg-card">
                         <div className="container mx-auto px-4">
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
@@ -433,7 +433,7 @@ const HowItWorks = () => {
                     </section>
 
                     {/* How It Works Section */}
-                    <section className="py-16 md:py-24">
+                    <section className="py-8 md:py-10">
                         <div className="container mx-auto px-4">
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
@@ -471,7 +471,7 @@ const HowItWorks = () => {
                     </section>
 
                     {/* Chat Section */}
-                    <section className="py-16 md:py-24 bg-card">
+                    <section className="py-8 md:py-10 bg-card">
                         <div className="container mx-auto px-4">
                             <div className="grid lg:grid-cols-2 gap-12 items-center">
                                 <motion.div
@@ -506,7 +506,7 @@ const HowItWorks = () => {
                     </section>
 
                     {/* CTA Section */}
-                    <section className="py-16 md:py-24 bg-foreground">
+                    <section className="py-8 md:py-10 bg-foreground">
                         <div className="container mx-auto px-4">
                             <motion.div
                                 initial={{ opacity: 0, y: 20 }}
