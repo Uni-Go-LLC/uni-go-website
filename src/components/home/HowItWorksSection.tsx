@@ -21,8 +21,7 @@ export const HowItWorksSection = () => {
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
+          animate={{ opacity: 1, y: 0 }}
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -37,9 +36,8 @@ export const HowItWorksSection = () => {
           {/* Driver Section */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="bg-gradient-card rounded-3xl p-8 border border-border"
+            animate={{ opacity: 1, x: 0 }}
+            className="bg-gradient-card rounded-3xl p-8 border border-border shadow-uni-md"
           >
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-12 rounded-2xl bg-primary flex items-center justify-center shadow-gold">
@@ -56,8 +54,7 @@ export const HowItWorksSection = () => {
                 <motion.div
                   key={step.title}
                   initial={{ opacity: 0, x: -10 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
+                  animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.1 }}
                   className="flex items-start gap-4"
                 >
@@ -82,9 +79,8 @@ export const HowItWorksSection = () => {
           {/* Rider Section */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="bg-gradient-card rounded-3xl p-8 border border-border"
+            animate={{ opacity: 1, x: 0 }}
+            className="bg-gradient-card rounded-3xl p-8 border border-border shadow-uni-md"
           >
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-12 rounded-2xl bg-foreground flex items-center justify-center">
@@ -101,8 +97,7 @@ export const HowItWorksSection = () => {
                 <motion.div
                   key={step.title}
                   initial={{ opacity: 0, x: 10 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
+                  animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: i * 0.1 }}
                   className="flex items-start gap-4"
                 >

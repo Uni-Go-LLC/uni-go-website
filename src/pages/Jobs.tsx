@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
 import { MapPin, Clock, DollarSign, ArrowRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
 
 const jobListings = [
     {
@@ -74,23 +73,17 @@ const Jobs = () => {
                             {" "}- we're always looking for exceptional talent!
                         </p>
                     </motion.div>
-                </div>
-            </section>
 
-            {/* Job Listings */}
-            <section className="py-16 md:py-24">
-                <div className="container mx-auto px-4">
-                    <div className="max-w-4xl mx-auto space-y-6">
+                    <div className="mt-10 grid gap-6">
                         {jobListings.map((job, index) => (
                             <motion.div
                                 key={job.id}
                                 initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
+                                animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: index * 0.1 }}
                             >
                                 <Link to={`/job/${job.id}`} className="no-underline">
-                                    <div className="bg-card border border-border rounded-2xl p-6 md:p-8 cursor-pointer">
+                                    <div className="bg-card border border-border rounded-2xl p-6 md:p-8 cursor-pointer hover:border-primary/30 transition-all">
                                         <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
                                             <div className="flex-1">
                                                 <h3 className="text-2xl font-extrabold text-foreground mb-4">
@@ -100,7 +93,7 @@ const Jobs = () => {
                                             <ArrowRight className="w-5 h-5 text-primary mt-1 md:mt-0" />
                                         </div>
 
-                                        <div className="space-y-2 mb-6">
+                                        <div className="space-y-2">
                                             <div className="flex items-center gap-2 text-muted-foreground font-normal">
                                                 <MapPin className="w-4 h-4" />
                                                 <span className="text-sm">{job.location}</span>

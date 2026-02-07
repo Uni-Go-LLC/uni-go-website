@@ -16,8 +16,7 @@ export const BetaCTASection = () => {
         <div className="max-w-4xl mx-auto text-center">
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-background mb-6"
           >
@@ -27,8 +26,7 @@ export const BetaCTASection = () => {
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
             className="text-lg text-background/70 mb-8 max-w-2xl mx-auto"
           >
@@ -38,8 +36,7 @@ export const BetaCTASection = () => {
           {/* Benefits */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3 }}
             className="grid md:grid-cols-3 gap-6 mb-10"
           >
@@ -63,9 +60,9 @@ export const BetaCTASection = () => {
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
+            className="text-center mt-12"
           >
             <Button asChild size="lg" className="shadow-gold group">
               <Link to="/beta">

@@ -71,44 +71,43 @@ const Careers = () => {
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground mb-8 leading-relaxed">
-              We're building something extraordinary, and we're looking for talented individuals to help us
+              We&apos;re building something extraordinary, and we&apos;re looking for talented individuals to help us
               shape the future. Our ridesharing platform is built exclusively for college students, making
               commuting more affordable, safer, easier, and more social.
               <br />
               <br />
-              As a fast-growing startup, we're looking for passionate individuals to help us build the
+              As a fast-growing startup, we&apos;re looking for passionate individuals to help us build the
               next generation of campus mobility.
             </p>
           </motion.div>
         </div>
       </section>
 
-      {/* Why Work Here Section */}
+      {/* Benefits Section */}
       <section className="py-8 md:py-10 bg-card">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Why Work <span className="text-gradient-gold">Here?</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Join a team that's revolutionizing campus transportation and making a real impact
+              Join a team that&apos;s revolutionizing campus transportation and making a real impact
               on student life.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-6 lg:gap-8 max-w-6xl mx-auto">
-            {benefits.map((benefit, index) => (
+          <div className="grid md:grid-cols-2 gap-6">
+            {benefits.map((benefit, i) => (
               <motion.div
                 key={benefit.title}
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                className="h-full"
               >
                 <Card className="p-6 h-full hover:shadow-lg transition-shadow border-border bg-card">
                   <div className="flex items-start gap-4">
@@ -136,28 +135,27 @@ const Careers = () => {
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
               Our <span className="text-gradient-gold">Values</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              We're driven by a commitment to excellence, integrity, and making a positive difference.
+              We&apos;re driven by a commitment to excellence, integrity, and making a positive difference.
               We believe in empowering our team members to do their best work while fostering an
               inclusive and supportive environment.
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {values.map((value, index) => (
+          <div className="grid md:grid-cols-2 gap-6">
+            {values.map((value, i) => (
               <motion.div
                 key={value.title}
                 initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                className="h-full"
               >
                 <Card className="p-6 h-full text-center hover:shadow-lg transition-shadow border-border bg-card">
                   <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
@@ -181,8 +179,7 @@ const Careers = () => {
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
+            animate={{ opacity: 1, y: 0 }}
             className="text-center max-w-3xl mx-auto"
           >
             <Briefcase className="w-16 h-16 text-primary mx-auto mb-6" />
@@ -190,7 +187,7 @@ const Careers = () => {
               Open <span className="text-gradient-gold">Positions</span>
             </h2>
             <p className="text-lg text-background/70 mb-8">
-              Explore our open roles and submit your application. We're always looking for talented
+              Explore our open roles and submit your application. We&apos;re always looking for talented
               individuals who share our passion for innovation and student success.
             </p>
             <Button

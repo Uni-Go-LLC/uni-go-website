@@ -237,125 +237,119 @@ const JobDetails = () => {
                             </a>
                         </Button>
                     </motion.div>
-                </div>
-            </section>
 
-            <section className="py-16 md:py-24">
-                <div className="container mx-auto px-4 max-w-3xl">
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        className="mb-12"
-                    >
-                        <h2 className="text-3xl font-bold text-foreground mb-4">
-                            About the Role
-                        </h2>
-                        <p className="text-lg text-muted-foreground leading-relaxed">
-                            {job.aboutRole}
-                        </p>
-                    </motion.div>
-
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        className="mb-12"
-                    >
-                        <h2 className="text-3xl font-bold text-foreground mb-4">
-                            What You'll Do
-                        </h2>
-                        <ul className="space-y-3">
-                            {job.whatYouDo.map((item: string, i: number) => (
-                                <li key={i} className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary font-semibold flex-shrink-0">•</span>
-                                    <span>{item}</span>
-                                </li>
-                            ))}
-                        </ul>
-                    </motion.div>
-
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        className="mb-12"
-                    >
-                        <h2 className="text-3xl font-bold text-foreground mb-4">
-                            What We're Looking For
-                        </h2>
-                        <ul className="space-y-3">
-                            {job.whatWeLookingFor.map((item: string, i: number) => (
-                                <li key={i} className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary font-semibold flex-shrink-0">•</span>
-                                    <span>{item}</span>
-                                </li>
-                            ))}
-                        </ul>
-                    </motion.div>
-
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        className="mb-12"
-                    >
-                        <h2 className="text-3xl font-bold text-foreground mb-6">
-                            Why Join Us?
-                        </h2>
-                        <div className="grid md:grid-cols-2 gap-6">
-                            {job.whyJoinUs.map((benefit: any, i: number) => (
-                                <div key={i} className="bg-card border border-border rounded-lg p-4">
-                                    <h3 className="font-semibold text-foreground mb-2">{benefit.title}</h3>
-                                    <p className="text-sm text-muted-foreground">{benefit.description}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </motion.div>
-
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        className="mb-12"
-                    >
-                        <h2 className="text-3xl font-bold text-foreground mb-4">
-                            Application Process
-                        </h2>
-                        <ol className="space-y-3">
-                            {job.applicationProcess.map((step: string, i: number) => (
-                                <li key={i} className="flex gap-3 text-muted-foreground">
-                                    <span className="text-primary font-semibold flex-shrink-0">{i + 1}.</span>
-                                    <span>{step}</span>
-                                </li>
-                            ))}
-                        </ol>
-                    </motion.div>
-
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        className="bg-foreground rounded-2xl p-8 text-center"
-                    >
-                        <h3 className="text-2xl font-bold text-background mb-4">
-                            Ready to Apply?
-                        </h3>
-                        <p className="text-background/70 mb-6">
-                            Send us your resume, portfolio, and tell us why you'd be a great fit for the team.
-                        </p>
-                        <Button
-                            size="lg"
-                            variant="outline"
-                            className="border-background text-background hover:bg-background hover:text-foreground"
-                            asChild
+                    <div className="mt-12 space-y-10">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            className="mb-12"
                         >
-                            <a href={applyLink} target="_blank" rel="noopener noreferrer">
-                                <Send className="w-4 h-4 mr-2" />
-                                Apply
-                            </a>
-                        </Button>
-                    </motion.div>
+                            <h2 className="text-3xl font-bold text-foreground mb-4">
+                                About the Role
+                            </h2>
+                            <p className="text-lg text-muted-foreground leading-relaxed">
+                                {job.aboutRole}
+                            </p>
+                        </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            className="mb-12"
+                        >
+                            <h2 className="text-3xl font-bold text-foreground mb-4">
+                                What You'll Do
+                            </h2>
+                            <ul className="space-y-3">
+                                {job.whatYouDo.map((item: string, i: number) => (
+                                    <li key={i} className="flex gap-3 text-muted-foreground">
+                                        <span className="text-primary font-semibold flex-shrink-0">•</span>
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            className="mb-12"
+                        >
+                            <h2 className="text-3xl font-bold text-foreground mb-4">
+                                What We're Looking For
+                            </h2>
+                            <ul className="space-y-3">
+                                {job.whatWeLookingFor.map((item: string, i: number) => (
+                                    <li key={i} className="flex gap-3 text-muted-foreground">
+                                        <span className="text-primary font-semibold flex-shrink-0">•</span>
+                                        <span>{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
+                        </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            className="mb-12"
+                        >
+                            <h2 className="text-3xl font-bold text-foreground mb-6">
+                                Why Join Us?
+                            </h2>
+                            <div className="grid md:grid-cols-2 gap-6">
+                                {job.whyJoinUs.map((benefit: any, i: number) => (
+                                    <div key={i} className="bg-card border border-border rounded-lg p-4">
+                                        <h3 className="font-semibold text-foreground mb-2">{benefit.title}</h3>
+                                        <p className="text-sm text-muted-foreground">{benefit.description}</p>
+                                    </div>
+                                ))}
+                            </div>
+                        </motion.div>
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            className="mb-12"
+                        >
+                            <h2 className="text-3xl font-bold text-foreground mb-4">
+                                Application Process
+                            </h2>
+                            <ol className="space-y-3">
+                                {job.applicationProcess.map((step: string, i: number) => (
+                                    <li key={i} className="flex gap-3 text-muted-foreground">
+                                        <span className="text-primary font-semibold flex-shrink-0">{i + 1}.</span>
+                                        <span>{step}</span>
+                                    </li>
+                                ))}
+                            </ol>
+                        </motion.div>
+                    </div>
+
+                    <section className="mt-12 bg-foreground rounded-3xl p-8 md:p-10">
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            className="text-center"
+                        >
+                            <h3 className="text-2xl font-bold text-background mb-4">
+                                Ready to Apply?
+                            </h3>
+                            <p className="text-background/70 mb-6">
+                                Send us your resume, portfolio, and tell us why you'd be a great fit for the team.
+                            </p>
+                            <Button
+                                size="lg"
+                                variant="outline"
+                                className="border-background text-background hover:bg-background hover:text-foreground"
+                                asChild
+                            >
+                                <a href={applyLink} target="_blank" rel="noopener noreferrer">
+                                    <Send className="w-4 h-4 mr-2" />
+                                    Apply
+                                </a>
+                            </Button>
+                        </motion.div>
+                    </section>
                 </div>
             </section>
         </Layout>
