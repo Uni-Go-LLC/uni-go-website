@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { Shield, Users, Heart, Target, Zap } from "lucide-react";
-import rideFeedImage from "@/assets/images/ride-feed.png";
+import rideFeedImage from "@/assets/images/ride-feed-requested.png";
 
 const values = [
   {

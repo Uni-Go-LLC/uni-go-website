@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import createRideRequestImage from "@/assets/images/create-ride-request.png";
-import requestRideDetailsImage from "@/assets/images/request-ride-details.png"
+import requestRideDetailsImage from "@/assets/images/request-ride-detail.png"
 import { Layout } from "@/components/layout/Layout";
 import { MapPin, DollarSign, Shield, Clock, Bell } from "lucide-react";
 import { BetaSignupButton } from "@/components/BetaSignupButton";
