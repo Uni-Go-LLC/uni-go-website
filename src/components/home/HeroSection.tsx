@@ -88,7 +88,7 @@ export const HeroSection = () => {
             className="relative flex justify-end"
           >
             <div className="relative mr-4 md:mr-8">
-              <img src={getStartedImage} alt="Get Started Screen" className="w-56 md:w-64 animate-float rounded-3xl" />
+              <img src={getStartedImage} alt="Get Started Screen" className="w-56 md:w-64 -translate-y-5 rounded-3xl" />
 
               <div className="absolute -left-24 md:-left-44 top-16">
                 <img src={rideFeedImage} alt="Ride Feed Screen" className="w-48 md:w-56 rounded-3xl" />

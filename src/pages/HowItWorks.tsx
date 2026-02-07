@@ -209,7 +209,7 @@ const HowItWorks = () => {
                                     className="flex justify-center lg:justify-end"
                                 >
                                     <div className="relative -ml-24 md:ml-0 md:mr-4 lg:mr-8">
-                                        <img src={createRideRequestImage} alt="Create Ride Request Screen" className="w-56 md:w-64 animate-float rounded-3xl" />
+                                        <img src={createRideRequestImage} alt="Create Ride Request Screen" className="w-56 md:w-64 -translate-y-5 rounded-3xl" />
 
                                         <div className="absolute -right-24 md:-right-44 top-16">
                                             <img src={requestRideDetailsImage} alt="Create Ride Request Screen" className="w-48 md:w-56 rounded-3xl" />
@@ -383,7 +383,7 @@ const HowItWorks = () => {
                                     className="flex justify-center lg:justify-end"
                                 >
                                     <div className="relative -ml-24 md:ml-0 md:mr-4 lg:mr-8">
-                                        <img src={createRideOfferImage} alt="Create Ride Offer Screen" className="w-56 md:w-64 animate-float rounded-3xl" />
+                                        <img src={createRideOfferImage} alt="Create Ride Offer Screen" className="w-56 md:w-64 -translate-y-5 rounded-3xl" />
 
                                         <div className="absolute -right-24 md:-right-44 top-16">
                                             <img src={offerRideDetailsImage} alt="Offer Ride Details Screen" className="w-48 md:w-56 rounded-3xl" />
