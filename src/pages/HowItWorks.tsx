@@ -150,7 +150,7 @@ const HowItWorks = () => {
 
                         {/* Tab Navigation */}
                         <div className="mt-10 flex justify-center">
-                            <div className="bg-card/80 border border-border/80 rounded-2xl shadow-uni-md backdrop-blur-sm px-3 py-3 w-full max-w-2xl">
+                            <div className="bg-card/80 border border-border/80 rounded-2xl backdrop-blur-sm px-3 py-3 w-full max-w-2xl">
                                 <p className="text-center text-xs md:text-sm text-muted-foreground mb-3 font-medium tracking-wide uppercase">
                                     How Uni Go works for...
                                 </p>
@@ -208,10 +208,10 @@ const HowItWorks = () => {
                                     className="flex justify-center lg:justify-end"
                                 >
                                     <div className="relative -ml-24 md:ml-0 md:mr-4 lg:mr-8">
-                                        <img src={createRideRequestImage} alt="Create Ride Request Screen" className="w-56 md:w-64 animate-float rounded-3xl shadow-uni-lg" />
+                                        <img src={createRideRequestImage} alt="Create Ride Request Screen" className="w-56 md:w-64 animate-float rounded-3xl" />
 
                                         <div className="absolute -right-24 md:-right-44 top-16">
-                                            <img src={requestRideDetailsImage} alt="Create Ride Request Screen" className="w-48 md:w-56 rounded-3xl shadow-uni-lg" />
+                                            <img src={requestRideDetailsImage} alt="Create Ride Request Screen" className="w-48 md:w-56 rounded-3xl" />
                                         </div>
                                     </div>
                                 </motion.div>
@@ -244,7 +244,7 @@ const HowItWorks = () => {
                                         whileInView={{ opacity: 1, y: 0 }}
                                         viewport={{ once: true }}
                                         transition={{ delay: i * 0.1 }}
-                                        className="bg-background rounded-2xl p-6 border border-border hover:border-primary/30 hover:shadow-uni-md transition-all"
+                                        className="bg-background rounded-2xl p-6 border border-border hover:border-primary/30 transition-all"
                                     >
                                         <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                                             <feature.icon className="w-7 h-7 text-primary" />
@@ -347,10 +347,10 @@ const HowItWorks = () => {
                                     className="flex justify-center lg:justify-end"
                                 >
                                     <div className="relative -ml-24 md:ml-0 md:mr-4 lg:mr-8">
-                                        <img src={createRideOfferImage} alt="Create Ride Offer Screen" className="w-56 md:w-64 animate-float rounded-3xl shadow-uni-lg" />
+                                        <img src={createRideOfferImage} alt="Create Ride Offer Screen" className="w-56 md:w-64 animate-float rounded-3xl" />
 
                                         <div className="absolute -right-24 md:-right-44 top-16">
-                                            <img src={offerRideDetailsImage} alt="Offer Ride Details Screen" className="w-48 md:w-56 rounded-3xl shadow-uni-lg" />
+                                            <img src={offerRideDetailsImage} alt="Offer Ride Details Screen" className="w-48 md:w-56 rounded-3xl" />
                                         </div>
                                     </div>
                                 </motion.div>
@@ -383,7 +383,7 @@ const HowItWorks = () => {
                                         whileInView={{ opacity: 1, y: 0 }}
                                         viewport={{ once: true }}
                                         transition={{ delay: i * 0.1 }}
-                                        className="bg-background rounded-2xl p-6 border border-border hover:border-primary/30 hover:shadow-uni-md transition-all"
+                                        className="bg-background rounded-2xl p-6 border border-border hover:border-primary/30 transition-all"
                                     >
                                         <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                                             <feature.icon className="w-7 h-7 text-primary" />

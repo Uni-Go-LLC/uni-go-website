@@ -39,7 +39,7 @@ export const HowItWorksSection = () => {
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-gradient-card rounded-3xl p-8 border border-border shadow-uni-md"
+            className="bg-gradient-card rounded-3xl p-8 border border-border"
           >
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-12 rounded-2xl bg-primary flex items-center justify-center shadow-gold">
@@ -84,7 +84,7 @@ export const HowItWorksSection = () => {
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="bg-gradient-card rounded-3xl p-8 border border-border shadow-uni-md"
+            className="bg-gradient-card rounded-3xl p-8 border border-border"
           >
             <div className="flex items-center gap-3 mb-8">
               <div className="w-12 h-12 rounded-2xl bg-foreground flex items-center justify-center">

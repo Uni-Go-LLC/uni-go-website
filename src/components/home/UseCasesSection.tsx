@@ -37,7 +37,7 @@ export const UseCasesSection = () => {
               viewport={{ once: true }}
               transition={{ delay: i * 0.05 }}
               whileHover={{ y: -5, scale: 1.02 }}
-              className="bg-card rounded-2xl p-6 border border-border shadow-uni-sm hover:shadow-uni-md hover:border-primary/30 transition-all cursor-default"
+              className="bg-card rounded-2xl p-6 border border-border hover:border-primary/30 transition-all cursor-default"
             >
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 mx-auto">
                 <useCase.icon className="w-6 h-6 text-primary" />

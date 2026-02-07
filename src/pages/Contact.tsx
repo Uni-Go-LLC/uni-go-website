@@ -80,7 +80,7 @@ const Contact = () => {
             transition={{ delay: 0.2 }}
             className="max-w-xl mx-auto"
           >
-            <div className="bg-card rounded-3xl p-8 md:p-12 border border-border shadow-uni-md">
+            <div className="bg-card rounded-3xl p-8 md:p-12 border border-border">
               <div className="text-center">
                 <div className="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
                   <Mail className="w-10 h-10 text-primary" />
@@ -97,7 +97,7 @@ const Contact = () => {
             </div>
 
             {/* Instagram */}
-            <div className="bg-card rounded-3xl p-8 md:p-12 border border-border shadow-uni-md mt-6">
+            <div className="bg-card rounded-3xl p-8 md:p-12 border border-border mt-6">
               <div className="text-center">
                 <div className="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center mx-auto mb-6">
                   <Instagram className="w-10 h-10 text-primary" />

@@ -96,10 +96,10 @@ const Drivers = () => {
                             className="flex justify-center lg:justify-end"
                         >
                             <div className="relative -ml-24 md:ml-0 md:mr-4 lg:mr-8">
-                                <img src={createRideOfferImage} alt="Create Ride Offer Screen" className="w-56 md:w-64 animate-float rounded-3xl shadow-uni-lg" />
+                                <img src={createRideOfferImage} alt="Create Ride Offer Screen" className="w-56 md:w-64 animate-float rounded-3xl" />
 
                                 <div className="absolute -right-24 md:-right-44 top-16">
-                                    <img src={offerRideDetailsImage} alt="Offer Ride Details Screen" className="w-48 md:w-56 rounded-3xl shadow-uni-lg" />
+                                    <img src={offerRideDetailsImage} alt="Offer Ride Details Screen" className="w-48 md:w-56 rounded-3xl" />
                                 </div>
                             </div>
                         </motion.div>
@@ -132,7 +132,7 @@ const Drivers = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: i * 0.1 }}
-                                className="bg-background rounded-2xl p-6 border border-border hover:border-primary/30 hover:shadow-uni-md transition-all"
+                                className="bg-background rounded-2xl p-6 border border-border hover:border-primary/30 transition-all"
                             >
                                 <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                                     <feature.icon className="w-7 h-7 text-primary" />

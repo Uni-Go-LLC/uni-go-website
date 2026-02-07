@@ -98,7 +98,7 @@ const Beta = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="bg-background rounded-2xl p-6 border border-border text-center hover:border-primary/30 hover:shadow-uni-md transition-all"
+                className="bg-background rounded-2xl p-6 border border-border text-center hover:border-primary/30 transition-all"
               >
                 <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                   <reward.icon className="w-7 h-7 text-primary" />

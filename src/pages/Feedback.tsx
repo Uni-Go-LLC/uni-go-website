@@ -57,7 +57,7 @@ const Feedback = () => {
             transition={{ delay: 0.3 }}
             className="max-w-xl mx-auto"
           >
-            <div className="bg-card rounded-3xl p-8 md:p-12 border border-border shadow-uni-md text-center">
+            <div className="bg-card rounded-3xl p-8 md:p-12 border border-border text-center">
               <div className="w-20 h-20 rounded-2xl bg-primary flex items-center justify-center mx-auto mb-6 shadow-gold">
                 <MessageCircle className="w-10 h-10 text-primary-foreground" />
               </div>

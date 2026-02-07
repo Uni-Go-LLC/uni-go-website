@@ -159,18 +159,6 @@
     background: var(--gradient-card);
   }
 
-  .shadow-uni-sm {
-    box-shadow: var(--shadow-sm);
-  }
-
-  .shadow-uni-md {
-    box-shadow: var(--shadow-md);
-  }
-
-  .shadow-uni-lg {
-    box-shadow: var(--shadow-lg);
-  }
-
   .shadow-gold {
     box-shadow: var(--shadow-gold);
   }

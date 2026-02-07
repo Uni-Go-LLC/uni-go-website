@@ -61,7 +61,7 @@ const About = () => {
               className="flex justify-center lg:justify-end"
             >
               <div className="relative mr-4 md:mr-8">
-                <img src={rideFeedImage} alt="Ride Feed Screen" className="w-48 md:w-56 rounded-3xl shadow-uni-lg" />
+                <img src={rideFeedImage} alt="Ride Feed Screen" className="w-48 md:w-56 rounded-3xl" />
               </div>
             </motion.div>
           </div>
@@ -93,7 +93,7 @@ const About = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="bg-background rounded-2xl p-6 border border-border hover:border-primary/30 hover:shadow-uni-md transition-all"
+                className="bg-background rounded-2xl p-6 border border-border hover:border-primary/30 transition-all"
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
                   <value.icon className="w-6 h-6 text-primary" />
