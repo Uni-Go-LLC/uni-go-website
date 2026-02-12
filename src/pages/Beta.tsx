@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { Calendar, Gift, Users, CheckCircle, Clock } from "lucide-react";
+import { FeatureCard } from "@/components/ui/FeatureCard";
 import { DownloadAppButton } from "@/components/DownloadAppButton";
 import getStartedImage from "@/assets/images/get-started.png";
 
@@ -101,13 +102,15 @@ const Beta = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
-                className="bg-background rounded-2xl p-6 border border-border text-center hover:border-primary/30 transition-all"
               >
-                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                  <reward.icon className="w-7 h-7 text-primary" />
-                </div>
-                <h3 className="text-lg font-semibold text-foreground mb-2">{reward.title}</h3>
-                <p className="text-muted-foreground text-sm">{reward.description}</p>
+                <FeatureCard
+                  icon={reward.icon}
+                  title={reward.title}
+                  description={reward.description}
+                  className="bg-background rounded-2xl p-6 border border-border text-center hover:border-primary/30 transition-all"
+                  titleClassName="text-lg font-semibold text-foreground mb-2"
+                  descriptionClassName="text-muted-foreground text-sm"
+                />
               </motion.div>
             ))}
           </div>

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Gift, Users, CheckCircle } from "lucide-react";
+import { FeatureCard } from "@/components/ui/FeatureCard";
 import { GetStartedButton } from "../GetStartedButton";
 
 export const BetaCTASection = () => {
@@ -43,17 +44,13 @@ export const BetaCTASection = () => {
               { icon: Gift, title: "Gift Cards", description: "Gift cards & prizes for participating" },
               { icon: Users, title: "Early Access", description: "Be first to try new features" },
               { icon: CheckCircle, title: "Shape the App", description: "Your feedback directly impacts development" },
-            ].map((benefit, i) => (
-              <div
+            ].map((benefit) => (
+              <FeatureCard
                 key={benefit.title}
-                className="bg-background/5 border border-background/10 rounded-2xl p-6"
-              >
-                <div className="w-12 h-12 rounded-xl bg-primary/20 flex items-center justify-center mb-4 mx-auto">
-                  <benefit.icon className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="font-semibold text-background mb-2">{benefit.title}</h3>
-                <p className="text-sm text-background/60">{benefit.description}</p>
-              </div>
+                icon={benefit.icon}
+                title={benefit.title}
+                description={benefit.description}
+              />
             ))}
           </motion.div>
 
