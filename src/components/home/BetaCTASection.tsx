@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Gift, Users, CheckCircle } from "lucide-react";
-import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
+import { Gift, Users, CheckCircle } from "lucide-react";
 import { GetStartedButton } from "../GetStartedButton";
 
 export const BetaCTASection = () => {

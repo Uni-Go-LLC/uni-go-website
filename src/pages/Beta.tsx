@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
-import { TestTube, Calendar, Gift, Users, Car, CheckCircle, ArrowRight, Clock } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Calendar, Gift, Users, CheckCircle, Clock } from "lucide-react";
 import { BetaFormButton } from "@/components/BetaFormButton";
 import getStartedImage from "@/assets/images/get-started.png";
 

@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight, Sparkles } from "lucide-react";
-import { Link } from "react-router-dom";
-import { Button } from "@/components/ui/button";
+import { Sparkles } from "lucide-react";
 import rideFeedImage from "@/assets/images/ride-feed-requested.png";
 import getStartedImage from "@/assets/images/get-started.png";
 import { GetStartedButton } from "../GetStartedButton";
