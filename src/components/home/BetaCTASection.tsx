@@ -50,6 +50,9 @@ export const BetaCTASection = () => {
                 icon={benefit.icon}
                 title={benefit.title}
                 description={benefit.description}
+                className="bg-background/5 border border-background/10 rounded-2xl p-6 text-center"
+                titleClassName="font-semibold text-background mb-2"
+                descriptionClassName="text-sm text-background/60"
               />
             ))}
           </motion.div>
