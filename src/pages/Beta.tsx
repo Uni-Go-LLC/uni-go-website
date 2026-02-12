@@ -40,7 +40,7 @@ const Beta = () => {
               </h1>
 
               <p className="text-lg text-muted-foreground mb-6">
-                Be part of the team that brings Uni Go to Augustana University! Sign up to test
+                Be part of the team that brings Uni Go to Augustana University! Download the app to test
                 the app as a rider, driver, or both. Earn rewards while helping us build the
                 perfect ridesharing experience for students.
               </p>
@@ -180,7 +180,7 @@ const Beta = () => {
               Ready to Join?
             </h2>
             <p className="text-lg text-background/70 mb-8">
-              Fill out our quick form to sign up as a beta tester. It only takes a minute!
+              Download the app from the App Store to get started!
             </p>
             <BetaFormButton />
           </motion.div>
