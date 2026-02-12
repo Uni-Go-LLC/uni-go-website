@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
-import { Briefcase, Users, Lightbulb, TrendingUp, Heart, Target, Award, Rocket } from "lucide-react";
+import { Users, Lightbulb, TrendingUp, Heart, Target, Award, Rocket } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 
@@ -182,7 +182,6 @@ const Careers = () => {
             animate={{ opacity: 1, y: 0 }}
             className="text-center max-w-3xl mx-auto"
           >
-            <Briefcase className="w-16 h-16 text-primary mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold text-background mb-4">
               Open <span className="text-gradient-gold">Positions</span>
             </h2>
