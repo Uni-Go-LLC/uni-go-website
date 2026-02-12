@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import rideFeedImage from "@/assets/images/ride-feed-requested.png";
 import getStartedImage from "@/assets/images/get-started.png";
+import { BetaSignupButton } from "../BetaSignupButton";
 
 export const HeroSection = () => {
   return (
@@ -48,14 +49,9 @@ export const HeroSection = () => {
             </p>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Button asChild size="lg" className="shadow-gold group">
-                <Link to="/beta">
-                  Sign Up for Beta
-                  <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </Button>
-            </div>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <BetaSignupButton />
+              </div>
 
             {/* Stats */}
             <div className="mt-10 grid grid-cols-3 gap-6 max-w-md mx-auto lg:mx-0">

@@ -77,11 +77,9 @@ export const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <Button asChild variant="default" className="mt-2 shadow-gold">
-                <Link to="/beta" onClick={() => setIsOpen(false)}>
-                  Sign Up for Beta
-                </Link>
-              </Button>
+                  <div className="mt-2">
+                    <BetaSignupButton />
+                  </div>
             </div>
           </motion.div>
         )}

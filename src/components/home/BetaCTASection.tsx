@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Gift, Users, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { BetaSignupButton } from "../BetaSignupButton";
 
 export const BetaCTASection = () => {
   return (
@@ -58,19 +59,14 @@ export const BetaCTASection = () => {
             ))}
           </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="text-center mt-12"
-          >
-            <Button asChild size="lg" className="shadow-gold group">
-              <Link to="/beta">
-                Sign Up for Beta
-                <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-              </Link>
-            </Button>
-          </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.4 }}
+              className="text-center mt-12"
+            >
+              <BetaSignupButton />
+            </motion.div>
         </div>
       </div>
     </section>
