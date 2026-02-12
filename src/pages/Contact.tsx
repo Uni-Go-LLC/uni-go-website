@@ -12,14 +12,6 @@ import {
 const Contact = () => {
   const faqItems = [
     {
-      question: "How do I sign up for the beta test?",
-      answer: "You can sign up for the beta test by clicking the 'Sign Up for Beta' button on our website or navigating to our Beta page. Fill out the form with your details to get started!"
-    },
-    {
-      question: "When will Uni Go launch?",
-      answer: "We're currently in beta testing phase with select universities. Full launch details will be in Spring 2026. Stay tuned for updates!"
-    },
-    {
       question: "How do drivers get paid?",
       answer: "When you post a ride as a driver, you set your own price for the trip. You keep 100% of the fare. You can also accept ride requests from other users and earn money that way."
     },
