@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { TestTube, Calendar, Gift, Users, Car, CheckCircle, ArrowRight, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { BetaFormButton } from "@/components/BetaFormButton";
 import getStartedImage from "@/assets/images/get-started.png";
 
 const timeline = [
@@ -46,16 +47,7 @@ const Beta = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <Button asChild size="lg" className="shadow-gold group">
-                  <a
-                    href="https://forms.gle/uLgw6DH4pcYdvszg7"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Fill out the Beta Form
-                    <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </a>
-                </Button>
+                <BetaFormButton />
               </div>
 
               {/* Quick Stats */}
@@ -191,16 +183,7 @@ const Beta = () => {
             <p className="text-lg text-background/70 mb-8">
               Fill out our quick form to sign up as a beta tester. It only takes a minute!
             </p>
-            <Button asChild size="lg" className="shadow-gold">
-              <a
-                href="https://forms.gle/uLgw6DH4pcYdvszg7"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Fill out the Beta Form
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </a>
-            </Button>
+            <BetaFormButton />
           </motion.div>
         </div>
       </section>
