@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { Calendar, Gift, Users, CheckCircle, Clock } from "lucide-react";
-import { BetaFormButton } from "@/components/BetaFormButton";
+import { DownloadAppButton } from "@/components/DownloadAppButton";
 import getStartedImage from "@/assets/images/get-started.png";
 
 const timeline = [
@@ -46,7 +46,7 @@ const Beta = () => {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
-                <BetaFormButton />
+                <DownloadAppButton />
               </div>
 
               {/* Quick Stats */}
@@ -182,7 +182,7 @@ const Beta = () => {
             <p className="text-lg text-background/70 mb-8">
               Download the app from the App Store to get started!
             </p>
-            <BetaFormButton />
+            <DownloadAppButton />
           </motion.div>
         </div>
       </section>

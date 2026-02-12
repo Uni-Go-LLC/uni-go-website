@@ -1,15 +1,15 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-interface BetaFormButtonProps {
+interface DownloadAppButtonProps {
   href?: string;
   className?: string;
 }
 
-export const BetaFormButton = ({
-  href = "https://forms.gle/uLgw6DH4pcYdvszg7",
+export const DownloadAppButton = ({
+  href = "https://apps.apple.com/us/app/uni-go/id6758922674",
   className = "",
-}: BetaFormButtonProps) => {
+}: DownloadAppButtonProps) => {
   return (
     <Button asChild size="lg" className={`shadow-gold ${className}`}>
       <a
@@ -17,7 +17,7 @@ export const BetaFormButton = ({
         target="_blank"
         rel="noopener noreferrer"
       >
-        Fill out the Beta Form
+        Download the App
         <ArrowRight className="w-4 h-4 ml-2" />
       </a>
     </Button>
