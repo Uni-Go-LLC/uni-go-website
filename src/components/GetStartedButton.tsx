@@ -2,16 +2,16 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-interface BetaSignupButtonProps {
+interface GetStartedButtonProps {
   size?: "default" | "sm" | "lg" | "icon";
   className?: string;
 }
 
-export const BetaSignupButton = ({ size = "lg", className = "" }: BetaSignupButtonProps) => {
+export const GetStartedButton = ({ size = "lg", className = "" }: GetStartedButtonProps) => {
   return (
     <Button asChild size={size} className={`shadow-gold group ${className}`}>
       <Link to="/beta">
-        Sign Up for Beta
+        Get Started
       </Link>
     </Button>
   );

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { ArrowRight, Gift, Users, CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { BetaSignupButton } from "../BetaSignupButton";
+import { GetStartedButton } from "../GetStartedButton";
 
 export const BetaCTASection = () => {
   return (
@@ -65,7 +65,7 @@ export const BetaCTASection = () => {
               transition={{ delay: 0.4 }}
               className="text-center mt-12"
             >
-              <BetaSignupButton />
+              <GetStartedButton />
             </motion.div>
         </div>
       </div>

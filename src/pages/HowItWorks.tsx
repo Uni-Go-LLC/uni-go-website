@@ -7,7 +7,7 @@ import offerRideDetailsImage from "@/assets/images/offer-ride-detail.png";
 import chatImage from "@/assets/images/chat.png";
 import { Layout } from "@/components/layout/Layout";
 import { MapPin, DollarSign, Shield, Clock, Bell, Users, Car } from "lucide-react";
-import { BetaSignupButton } from "@/components/BetaSignupButton";
+import { GetStartedButton } from "@/components/GetStartedButton";
 import { Button } from "@/components/ui/button";
 
 const riderFeatures = [
@@ -339,7 +339,7 @@ const HowItWorks = () => {
                                 <p className="text-lg text-background/70 mb-8">
                                     Join our beta program and be among the first to experience affordable student ridesharing.
                                 </p>
-                                <BetaSignupButton />
+                                <GetStartedButton />
                             </motion.div>
                         </div>
                     </section>
@@ -506,7 +506,7 @@ const HowItWorks = () => {
                                 <p className="text-lg text-background/70 mb-8">
                                     Join our beta program and be among the first drivers to earn with Uni Go.
                                 </p>
-                                <BetaSignupButton />
+                                <GetStartedButton />
                             </motion.div>
                         </div>
                     </section>

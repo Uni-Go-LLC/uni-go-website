@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import rideFeedImage from "@/assets/images/ride-feed-requested.png";
 import getStartedImage from "@/assets/images/get-started.png";
-import { BetaSignupButton } from "../BetaSignupButton";
+import { GetStartedButton } from "../GetStartedButton";
 
 export const HeroSection = () => {
   return (
@@ -50,7 +50,7 @@ export const HeroSection = () => {
 
             {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <BetaSignupButton />
+                <GetStartedButton />
               </div>
 
             {/* Stats */}

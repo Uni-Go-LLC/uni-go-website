@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logoImage from "@/assets/images/uni-go-logo.png";
-import { BetaSignupButton } from "@/components/BetaSignupButton";
+import { GetStartedButton } from "@/components/GetStartedButton";
 import { navLinks } from "@/lib/navigation";
 
 export const Navbar = () => {
@@ -37,7 +37,7 @@ export const Navbar = () => {
           </div>
 
           <div className="hidden md:block">
-            <BetaSignupButton />
+            <GetStartedButton />
           </div>
 
           {/* Mobile Menu Button */}
@@ -78,7 +78,7 @@ export const Navbar = () => {
                 </Link>
               ))}
                   <div className="mt-2">
-                    <BetaSignupButton />
+                    <GetStartedButton />
                   </div>
             </div>
           </motion.div>
