@@ -14,7 +14,7 @@ export const Footer = () => {
               <img src={logoImage} alt="Uni Go Logo" className="w-28 h-28 object-contain group-hover:scale-105 transition-transform" />
             </Link>
             <p className="text-muted-foreground text-sm mb-4">
-              The ride-sharing app made exclusively for college students. Connect, ride, and save together.
+              The ridesharing app made exclusively for college students. Connect, ride, and save together.
             </p>
           </div>
 
