@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
-import { Shield, Users, Heart, Target, Zap } from "lucide-react";
+import { Shield, Users, Heart, Target } from "lucide-react";
 import rideFeedImage from "@/assets/images/ride-feed-requested.png";
 import mapImage from "@/assets/images/map.png";
 
@@ -117,9 +117,6 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <div className="w-16 h-16 rounded-2xl bg-primary flex items-center justify-center mx-auto mb-6 shadow-gold">
-              <Zap className="w-8 h-8 text-primary-foreground" />
-            </div>
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
               Our Mission
             </h2>
