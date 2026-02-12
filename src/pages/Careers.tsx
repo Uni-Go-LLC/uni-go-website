@@ -109,7 +109,7 @@ const Careers = () => {
                 transition={{ delay: i * 0.1 }}
                 className="h-full"
               >
-                <Card className="p-6 h-full hover:shadow-lg transition-shadow border-border bg-card">
+                <Card className="p-6 h-full transition-shadow border-border bg-card">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
                       <benefit.icon className="w-6 h-6 text-primary" />
@@ -157,7 +157,7 @@ const Careers = () => {
                 transition={{ delay: i * 0.1 }}
                 className="h-full"
               >
-                <Card className="p-6 h-full text-center hover:shadow-lg transition-shadow border-border bg-card">
+                <Card className="p-6 h-full text-center transition-shadow border-border bg-card">
                   <div className="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
                     <value.icon className="w-8 h-8 text-primary" />
                   </div>
