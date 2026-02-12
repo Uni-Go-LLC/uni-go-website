@@ -5,8 +5,8 @@ import { BetaFormButton } from "@/components/BetaFormButton";
 import getStartedImage from "@/assets/images/get-started.png";
 
 const timeline = [
-  { phase: "Phase 1", title: "Sign Up", date: "Now", description: "Register your interest and join our beta tester community", active: true },
-  { phase: "Phase 2", title: "Launch Beta Test", date: "Early 2026", description: "Get early access to test core features as a rider or driver" },
+  { phase: "Phase 1", title: "Sign Up", description: "Register your interest and join our beta tester community"},
+  { phase: "Phase 2", title: "Launch Beta Test", date: "Now", description: "Download the app to test core features as a rider or driver", active: true  },
   { phase: "Phase 3", title: "Feedback & Iteration", date: "Spring 2026", description: "Share feedback and help us refine the experience" },
   { phase: "Phase 4", title: "Launch", date: "Fall 2026", description: "Official launch at Augustana University" },
 ];
