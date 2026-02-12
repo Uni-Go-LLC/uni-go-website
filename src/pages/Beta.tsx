@@ -95,22 +95,20 @@ const Beta = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto items-stretch">
             {rewards.map((reward, i) => (
               <motion.div
                 key={reward.title}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: i * 0.1 }}
+                className="bg-background rounded-2xl p-6 border border-border text-center hover:border-primary/30 transition-all flex flex-col items-center h-full"
               >
-                <FeatureCard
-                  icon={reward.icon}
-                  title={reward.title}
-                  description={reward.description}
-                  className="bg-background rounded-2xl p-6 border border-border text-center hover:border-primary/30 transition-all"
-                  titleClassName="text-lg font-semibold text-foreground mb-2"
-                  descriptionClassName="text-muted-foreground text-sm"
-                />
+                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                  <reward.icon className="w-7 h-7 text-primary" />
+                </div>
+                <h3 className="text-lg font-semibold text-foreground mb-2">{reward.title}</h3>
+                <p className="text-muted-foreground text-sm">{reward.description}</p>
               </motion.div>
             ))}
           </div>
