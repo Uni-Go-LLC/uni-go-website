@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { CardGridMotion } from "@/components/ui/FeatureCard";
 import { Layout } from "@/components/layout/Layout";
 import { Shield, Users, Heart, Target } from "lucide-react";
 import rideFeedImage from "@/assets/images/ride-feed-requested.png";
@@ -89,13 +90,10 @@ const About = () => {
             </p>
           </motion.div>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            {values.map((value, i) => (
-              <motion.div
+          <CardGridMotion className="grid md:grid-cols-2 gap-6">
+            {values.map((value) => (
+              <div
                 key={value.title}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
                 className="bg-background rounded-2xl p-6 border border-border hover:border-primary/30 transition-all"
               >
                 <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
@@ -103,9 +101,9 @@ const About = () => {
                 </div>
                 <h3 className="text-xl font-semibold text-foreground mb-2">{value.title}</h3>
                 <p className="text-muted-foreground">{value.description}</p>
-              </motion.div>
+              </div>
             ))}
-          </div>
+          </CardGridMotion>
         </div>
       </section>
 

@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { CardGridMotion } from "@/components/ui/FeatureCard";
 import { ShoppingCart, Plane, Briefcase, Calendar, Building, MapPinned } from "lucide-react";
 
 const useCases = [
@@ -27,14 +28,10 @@ export const UseCasesSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-          {useCases.map((useCase, i) => (
-            <motion.div
+        <CardGridMotion className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          {useCases.map((useCase) => (
+            <div
               key={useCase.title}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: i * 0.05 }}
-              whileHover={{ y: -5, scale: 1.02 }}
               className="bg-card rounded-2xl p-6 border border-border hover:border-primary/30 transition-all cursor-default"
             >
               <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 mx-auto">
@@ -42,9 +39,9 @@ export const UseCasesSection = () => {
               </div>
               <h3 className="font-semibold text-foreground text-center mb-1">{useCase.title}</h3>
               <p className="text-xs text-muted-foreground text-center">{useCase.description}</p>
-            </motion.div>
+            </div>
           ))}
-        </div>
+        </CardGridMotion>
       </div>
     </section>
   );

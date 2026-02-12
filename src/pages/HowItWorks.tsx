@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { CardGridMotion } from "@/components/ui/FeatureCard";
 import { useState } from "react";
 import createRideRequestImage from "@/assets/images/create-ride-request.png";
 import requestRideDetailsImage from "@/assets/images/request-ride-detail.png"
@@ -236,13 +237,10 @@ const HowItWorks = () => {
                                 </p>
                             </motion.div>
 
-                            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-                                {riderFeatures.map((feature, i) => (
-                                    <motion.div
+                            <CardGridMotion className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                                {riderFeatures.map((feature) => (
+                                    <div
                                         key={feature.title}
-                                        initial={{ opacity: 0, y: 20 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ delay: i * 0.1 }}
                                         className="bg-background rounded-2xl p-6 border border-border hover:border-primary/30 transition-all"
                                     >
                                         <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
@@ -250,9 +248,9 @@ const HowItWorks = () => {
                                         </div>
                                         <h4 className="text-lg font-semibold text-foreground mb-2">{feature.title}</h4>
                                         <p className="text-muted-foreground text-sm">{feature.description}</p>
-                                    </motion.div>
+                                    </div>
                                 ))}
-                            </div>
+                            </CardGridMotion>
                         </div>
                     </section>
 
@@ -272,23 +270,20 @@ const HowItWorks = () => {
                                 </p>
                             </motion.div>
 
-                            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-                                {riderHowItWorks.map((item, i) => (
-                                    <motion.div
+                            <CardGridMotion className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                                {riderHowItWorks.map((item) => (
+                                    <div
                                         key={item.step}
-                                        initial={{ opacity: 0, y: 20 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ delay: i * 0.1 }}
-                                        className="text-center"
+                                        className="text-center bg-background rounded-2xl p-6 border border-border hover:border-primary/30 transition-all"
                                     >
                                         <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 border-2 border-primary/20">
                                             <span className="text-2xl font-bold text-primary">{item.step}</span>
                                         </div>
                                         <h4 className="text-lg font-semibold text-foreground mb-2">{item.title}</h4>
                                         <p className="text-muted-foreground text-sm">{item.description}</p>
-                                    </motion.div>
+                                    </div>
                                 ))}
-                            </div>
+                            </CardGridMotion>
                         </div>
                     </section>
 
@@ -403,13 +398,10 @@ const HowItWorks = () => {
                                 </p>
                             </motion.div>
 
-                            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
-                                {driverFeatures.map((feature, i) => (
-                                    <motion.div
+                            <CardGridMotion className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                                {driverFeatures.map((feature) => (
+                                    <div
                                         key={feature.title}
-                                        initial={{ opacity: 0, y: 20 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ delay: i * 0.1 }}
                                         className="bg-background rounded-2xl p-6 border border-border hover:border-primary/30 transition-all"
                                     >
                                         <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-4">
@@ -417,9 +409,9 @@ const HowItWorks = () => {
                                         </div>
                                         <h4 className="text-lg font-semibold text-foreground mb-2">{feature.title}</h4>
                                         <p className="text-muted-foreground text-sm">{feature.description}</p>
-                                    </motion.div>
+                                    </div>
                                 ))}
-                            </div>
+                            </CardGridMotion>
                         </div>
                     </section>
 
@@ -439,23 +431,20 @@ const HowItWorks = () => {
                                 </p>
                             </motion.div>
 
-                            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-                                {driverHowItWorks.map((item, i) => (
-                                    <motion.div
+                            <CardGridMotion className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+                                {driverHowItWorks.map((item) => (
+                                    <div
                                         key={item.step}
-                                        initial={{ opacity: 0, y: 20 }}
-                                        animate={{ opacity: 1, y: 0 }}
-                                        transition={{ delay: i * 0.1 }}
-                                        className="text-center"
+                                        className="text-center bg-background rounded-2xl p-6 border border-border hover:border-primary/30 transition-all"
                                     >
                                         <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 border-2 border-primary/20">
                                             <span className="text-2xl font-bold text-primary">{item.step}</span>
                                         </div>
                                         <h4 className="text-lg font-semibold text-foreground mb-2">{item.title}</h4>
                                         <p className="text-muted-foreground text-sm">{item.description}</p>
-                                    </motion.div>
+                                    </div>
                                 ))}
-                            </div>
+                            </CardGridMotion>
                         </div>
                     </section>
 
