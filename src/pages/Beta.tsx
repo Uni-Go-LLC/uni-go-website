@@ -37,7 +37,7 @@ const Beta = () => {
               animate={{ opacity: 1, y: 0 }}
             >
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-                Help Us Launch Uni <span className="text-gradient-gold">Go</span>
+                Help Us Launch <span className="text-gradient-gold">Uni Go</span>
               </h1>
 
               <p className="text-lg text-muted-foreground mb-6">

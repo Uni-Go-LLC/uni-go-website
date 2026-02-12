@@ -92,7 +92,7 @@ const Careers = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Why Work <span className="text-gradient-gold">Here?</span>
+              Why Work Here?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Join a team that&apos;s revolutionizing campus transportation and making a real impact
@@ -139,7 +139,7 @@ const Careers = () => {
             className="text-center mb-12"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Our <span className="text-gradient-gold">Values</span>
+              Our Values
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
               We&apos;re driven by a commitment to excellence, integrity, and making a positive difference.
@@ -183,7 +183,7 @@ const Careers = () => {
             className="text-center max-w-3xl mx-auto"
           >
             <h2 className="text-3xl md:text-4xl font-bold text-background mb-4">
-              Open <span className="text-gradient-gold">Positions</span>
+              Open Positions
             </h2>
             <p className="text-lg text-background/70 mb-8">
               Explore our open roles and submit your application. We&apos;re always looking for talented

@@ -25,7 +25,7 @@ export const HowItWorksSection = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            How <span className="text-gradient-gold">Uni Go</span> Works
+            How Uni Go Works?
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Whether you have a car or need a ride, Uni Go makes it easy to connect with fellow students.
