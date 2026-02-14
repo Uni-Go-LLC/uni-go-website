@@ -6,8 +6,8 @@ import { DownloadAppButton } from "@/components/DownloadAppButton";
 import getStartedImage from "@/assets/images/get-started.png";
 
 const timeline = [
-  { phase: "Phase 1", title: "Sign Up", description: "Register your interest and join our beta tester community"},
-  { phase: "Phase 2", title: "Launch Beta Test", date: "Now", description: "Download the app to test core features as a rider or driver", active: true  },
+  { phase: "Phase 1", title: "Sign Up", description: "Register your interest and join our beta tester community" },
+  { phase: "Phase 2", title: "Launch Beta Test", date: "Now", description: "Download the app to test core features as a rider or driver", active: true },
   { phase: "Phase 3", title: "Feedback & Iteration", date: "Spring 2026", description: "Share feedback and help us refine the experience" },
   { phase: "Phase 4", title: "Launch", date: "Fall 2026", description: "Official launch at Augustana University" },
 ];
