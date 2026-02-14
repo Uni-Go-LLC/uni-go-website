@@ -30,7 +30,7 @@ export const BetaCTASection = () => {
             transition={{ delay: 0.2 }}
             className="text-lg text-background/70 mb-8 max-w-2xl mx-auto"
           >
-            Download the app as a rider, driver, or both. Share feedback to help us build features that work for you.
+            Sign up as a rider, driver, or both. Share feedback to help us build features that work for you.
           </motion.p>
 
           {/* Benefits */}
