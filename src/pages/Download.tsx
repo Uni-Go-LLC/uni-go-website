@@ -57,7 +57,7 @@ const Download = () => {
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
-              className="flex justify-center lg:justify-end"
+              className="relative flex justify-end"
             >
               <div className="relative mr-4 md:mr-8">
                 <img
